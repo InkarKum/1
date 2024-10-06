@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab2.css">
+    <title>Кумбаева Инкар - Личная страница</title>
+</head>
+<body>
+    <header>
+        <h1>Кумбаева Инкар</h1>
+        <p>В поиске себя</p>
+        <button onclick="document.getElementById('bio').scrollIntoView();">О себе</button>
+        <button onclick="document.getElementById('hobbies').scrollIntoView();">Мои увлечения</button>
+        <button onclick="document.getElementById('interesting-facts').scrollIntoView();">Интересные факты</button>
+        <button onclick="document.getElementById('contact-info').scrollIntoView();">Контакты</button>
+    </header>
+
+    <section id="bio">
+        <h2>О себе</h2>
+        <p>Меня зовут Инкар. На данный момент мне 20 лет. Сейчас я являюсь студентом 3 курса университета КБТУ и учусь по специальности IT Management. Я очень рада что учусь в КБТУ, ведь КБТУ открывает мне много возможностей. Но моя жизнь изменилась после поступления в НИШ, где я начала увлекаться спортом, научными проектами и миром IT. Эти места смогли мне помочь сформировать во мне того человека, кем я являюсь сейчас. Я хочу поделиться информацией о себе тут.</p>
+        <div class="image-container">
+            <img src="https://kbtu.edu.kz/images/kbtu_img.jpg" alt="Description 1" class="bio-image">
+            <img src="https://ast.nis.edu.kz/wp-content/uploads/2022/09/NISH-FMN-g.-Nur-Sultan-NewSchool-3529.jpg" alt="Description 2" class="bio-image">
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>Мои увлечения</h2>
+        <table>
+            <tr>
+                <th>Увлечение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>Танцы</td>
+                <td>Народные танцы на протяжении 6 лет</td>
+            </tr>
+            <tr>
+                <td>Спорт</td>
+                <td>Участие в атлетике и выигрыш медалей на соревнованиях</td>
+            </tr>
+            <tr>
+                <td>Научные проекты</td>
+                <td>Изучение растений и участие в научных мероприятиях</td>
+            </tr>
+            <tr>
+                <td>IT</td>
+                <td>Разработка робототехники и участие в олимпиадах</td>
+            </tr>
+        </table>
+        <div class="hobbies-container">
+            <img src="https://wdoxnovenie.ru/filestore/uploaded/%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D0%B0%D0%BD%D0%B5%D1%86-02.jpg" alt="Танцы" class="hobby-image">
+            <img src="https://www.gov.kz/uploads/2020/1/15/9892a20eaf5887a597319cee411c5f03_original.256187.jpg" alt="Спорт" class="hobby-image">
+            <img src="https://qazedu.kz//cdn/blog/Science-Explosion1.png" alt="Научные проекты" class="hobby-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJhO4inEmNYfa6AvlCuJjr3Y37W650lyycEw&s" alt="IT" class="hobby-image">
+        </div>
+    </section>
+
+    <section id="interesting-facts">
+        <h2>Интересные факты</h2>
+        <table>
+            <tr>
+                <th>Факт</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>Профессиональный опыт</td>
+                <td>Работа в TrustMe и MetaCoding, развитие в продажах и менеджменте</td>
+            </tr>
+            <tr>
+                <td>Преподавание</td>
+                <td>Преподавательская деятельность в Morrison Code Academy</td>
+            </tr>
+            <tr>
+                <td>Стартап</td>
+                <td>Разработка и запуск собственного IT стартапа</td>
+            </tr>
+            <tr>
+                <td>Личные качества</td>
+                <td>Коммуникабельность, инициативность и трудолюбие</td>
+            </tr>
+        </table>
+        <div class="facts-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAyDmsusnql8UXLQiSq7OU1cwZ4Rai4Hduaw&s" alt="Профессиональный опыт" class="fact-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRce2rgiJX9Vm3H5KBRfb0wdJq4FeLPuXYu_A&s" alt="Преподавание" class="fact-image">
+            <img src="https://www.gov.kz/uploads/2021/1/14/085c81305cdb2de8667e4b2fc1fe31aa_original.312619.jpg" alt="Стартап" class="fact-image">
+            <img src="https://static.tildacdn.one/tild6561-3831-4738-b863-623465353733/-.jpg" alt="Личные качества" class="fact-image">
+        </div>
+    </section>
+
+    <footer id="contact-info">
+        <p>Контактная информация: <a href="mailto:i_kumbayeva@kbtu.kz">i_kumbayeva@kbtu.kz</a></p>
+        <p>Социальные сети: <a href="https://www.instagram.com/kmbva_i?igsh=MTZmOWtlaGl5bjNyNA==">Instagram</a></p>
+    </footer>
+</body>
+</html>
