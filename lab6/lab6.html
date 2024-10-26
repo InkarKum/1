@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="lab6.css">
+</head>
+<body>
+    <div id="musicPlayer" class="player">
+        <img id="trackCover" src="images.jpeg" alt="Cover Image" class="cover">
+        <div id="trackInfo">
+            <p id="trackName">Track Name</p>
+            <p id="artistName">Artist</p>
+        </div>
+        <div>
+            <button onclick="togglePlayPause()">Play</button>
+            <button onclick="nextTrack()">Next</button>
+        </div>
+        <ul id="trackList">
+            <!-- Track list items will be populated by JavaScript -->
+        </ul>
+    </div>
+    <script src="lab6.js"></script>
+</body>
+</html>
+
