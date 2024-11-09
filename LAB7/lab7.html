@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">  
+<head> 
+    <meta charset="UTF-8">
+    <title>Hero Gallery</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <style>
+        body { padding: 20px; }
+        .hero-info { margin-top: 20px; }
+        img { max-width: 300px; max-height: 300px; margin-bottom: 20px; }
+    </style>
+</head> 
+<body> 
+    <div class="text-center">  
+        <img id="hero-avatar" src="" alt="hero-avatar" class="img-fluid">  
+        <h1 id="hero-title">Загрузка...</h1> 
+        <div id="hero-description" class="alert alert-info"></div>
+        <div class="hero-info">
+            <p id="hero-gender">Gender: </p>
+            <p id="hero-race">Race: </p>
+            <p id="hero-height">Height: </p>
+            <p id="hero-weight">Weight: </p>
+            <p id="hero-eye-color">Eye color: </p>
+            <p id="hero-hair-color">Hair color: </p>
+            <p id="hero-intelligence">Intelligence: </p>
+            <p id="hero-strength">Strength: </p>
+            <p id="hero-speed">Speed: </p>
+            <p id="hero-durability">Durability: </p>
+        </div>
+        <button id="next-hero" class="btn btn-primary">Next Hero</button>
+    </div>
+    <script src="lab7.js"></script> 
+</body> 
+</html>
