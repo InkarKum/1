@@ -1,0 +1,979 @@
+
+  :root {
+    --primary-blue: #67B7D1;
+    --accent-green: #A8E754;
+    --white: #ffffff;
+    --dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: var(--light-gray);
+    line-height: 1.6;
+}
+
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--primary-blue);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 85px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-green);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* [Previous CSS remains the same until social-icons section] */
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Removed general size settings from .social-icons img */
+.social-icons img {
+    transition: transform 0.3s;
+}
+
+/* Individual icon sizes */
+.icon-instagram {
+    height: 30px;
+    width: 55px;
+}
+
+.icon-whatsapp {
+    height: 45px;
+    width: 45px;
+    transform: translateY(-7px);
+
+}
+
+.icon-tiktok {
+    height: 35px;
+    width: 35px;
+    transform: translateY(-2px);
+
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Hero section */
+/* Базовые стили */
+:root {
+    --primary-blue: #67B7D1;
+    --accent-green: #A8E754;
+    --white: #ffffff;
+    --dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero секция */
+.hero {
+    padding-top: 100px;
+    margin-top: 5rem;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--primary-blue);
+    border-radius: 25px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+    flex: 1;
+    color: var(--white);
+    padding-right: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text span {
+    color: var(--accent-green);
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    transform: translateY(40px);
+}
+
+.try-free-btn {
+    background-color: var(--accent-green);
+    color: var(--dark);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 2rem;
+}
+
+.try-free-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Opportunities section */
+
+.opportunities {
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  .opportunities h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  .opportunities-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+  }
+  
+  .rocket {
+    position: absolute;
+    top: -80px; /* Расположить ракету над цифрой */
+    left: 10%; /* Начальная позиция точно над цифрой "1" */
+    width: 800px; /* Увеличенный размер ракеты */
+    height: 800px;
+    animation: moveRocketHorizontally 15s linear infinite; /* Анимация движется бесконечно */
+  }
+  
+  @keyframes moveRocketHorizontally {
+    0% {
+      transform: translate(0, -60px);/* Начальная позиция над цифрой "1" */
+    }
+    50% {
+      transform: translateX(80%); /* Ракета движется вправо над "2" и "3" */
+    }
+    100% {
+      transform: translate(0, -60px);/* Ракета возвращается к цифре "1" */
+    }
+  }
+  
+  .opportunity-container {
+    display: flex; /* Устанавливает flexbox */
+    flex-direction: row; /* Горизонтальное расположение элементов */
+    justify-content: space-around; /* Равномерное распределение по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+    max-width: 1200px; /* Ограничение ширины */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 2rem 0; /* Отступы сверху и снизу */
+    gap: 2rem; /* Расстояние между блоками */
+}
+
+
+  
+  .opportunity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center; 
+  }
+
+  
+
+  .opportunity p {
+    font-size: 1.6rem; /* Размер текста */
+    font-weight: bold; /* Жирный шрифт */
+    color: #333; /* Цвет текста */
+    text-align: center; /* Центрирование текста */
+    margin-top: 1rem; /* Отступ сверху для спуска вниз */
+}
+
+  .opportunity-circle {
+    position: relative;
+    width: 80px; /* Размер внешнего круга */
+    height: 80px;
+    border-radius: 50%;
+    background-color: #67B7D1; /* Цвет заполненного круга (голубой) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.opportunity-circle.green {
+    background-color: #A8E754; /* Зеленый для второй цифры */
+}
+
+.opportunity-circle-outline {
+    position: absolute;
+    top: -10px; /* Смещение для внешнего круга */
+    left: -10px;
+    width: 100px; /* Размер внешнего круга */
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #67B7D1; /* Голубой для внешнего круга */
+    z-index: 0;
+}
+
+.opportunity-circle-outline.green {
+    border-color: #A8E754; /* Зеленый для внешнего круга */
+}
+
+.opportunity-circle-outline.blue {
+    border-color: #67B7D1; /* Голубой для внешнего круга */
+}
+
+.opportunity-number {
+    font-size: 1.5rem;
+    color: #ffffff; /* Белый цвет текста */
+    font-weight: bold;
+    z-index: 2; /* Обеспечиваем отображение поверх */
+    position: relative;
+}
+
+.rocket-container {
+    position: relative;
+    width: 100%; /* Ширина всего контейнера */
+    height: 150px; /* Высота контейнера */
+    overflow: visible;
+}
+
+.rocket {
+    object-fit: contain;
+    z-index: 10;
+    position: absolute;
+    top: -50px; /* Настройка высоты над цифрами */
+    left: 0; /* Начальная позиция */
+    height: 190px; /* Уменьшите размер ракеты */
+    animation: moveRocket 8s infinite; /* Анимация */
+}
+
+
+/* Анимация движения ракеты */
+@keyframes moveRocket{
+    0% {
+      transform: translate(0, 40px); /* Поднимаем ракету вверх */
+    }
+    100% {
+      transform: translate(100%, 40px); /* Двигаем ракету справа */
+    }
+  }
+
+
+
+.plans {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .plans h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .plans-container {
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+      "free help"
+      "robot robot"
+      "assistant professor";
+    gap: 0px 300px; 
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+ 
+  
+  .plan-card {
+    
+    background: #67B7D1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 300px; /* Фиксированная ширина */
+    height: 260px; /* Фиксированная высота */
+ 
+  }
+  #free-plan, #help-plan {
+    margin-top: 50px; /* Регулируйте значение для опускания */
+}
+
+  #assistant-plan, #professor-plan {
+    transform: translateY(-250px); /* Сдвигаем блоки вверх на 20px */
+}
+
+
+  
+  .plan-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .plan-header {
+    background: #A8E754;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .plan-content {
+    padding: 1.5rem;
+    background: #67B7D1;
+    color: white;
+  }
+  
+  .plan-content ul {
+    list-style: none;
+    margin: 1rem 0;
+  }
+  
+  .plan-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .price {
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .robot-container {
+    grid-area: robot;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .robot-container img {
+    
+    height: 300px;
+    transform: translateY(-150px); /* Поднимаем блок вверх */
+  }
+  
+  #free-plan { grid-area: free; }
+  #help-plan { grid-area: help; }
+  #assistant-plan { grid-area: assistant; }
+  #professor-plan { grid-area: professor; }
+
+.price {
+    text-align: right;
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    margin-top: 1rem;
+}
+
+.robot-image {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.robot-image img {
+    height: 200px;
+}
+
+/* Features section */
+
+  
+  .features h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: #333;
+  }
+
+.features-container {
+    display: grid;
+    grid-template-areas:
+        "left robot right";
+    grid-template-columns: auto 400px auto; /* Фиксированная ширина для центральной колонки */
+    gap: 0; /* Убираем отступ между колонками */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Уменьшенный отступ между блоками */
+}
+.feature-item {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Текст выровнен по левому краю */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирование текста по вертикали */
+    height: 150px; /* Фиксированная высота блока */
+}
+
+.feature-item h3 {
+    color: var(--accent-green);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem; /* Уменьшение размера текста заголовка */
+    line-height: 1.3; /* Увеличение межстрочного интервала */
+}
+
+.feature-item p {
+    font-size: 1rem; /* Размер текста описания */
+    line-height: 1.5; /* Межстрочный интервал для описания */
+    margin: 0; /* Убираем лишние отступы */
+}
+
+
+.robot-image-features {
+    grid-area: robot;
+    text-align: center;
+    z-index: 2;
+    margin: 0; /* Убираем отступы у робота */
+    padding: 0 1rem; /* Добавляем небольшой padding для визуального разделения */
+}
+
+.robot-image-features img {
+    width: 120%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Добавляем специальные классы для левой и правой колонок */
+.feature-column.left {
+    padding-right: 1rem; /* Отступ справа для левой колонки */
+}
+
+.feature-column.right {
+    padding-left: 1rem; /* Отступ слева для правой колонки */
+}
+.feature-item {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    text-align: left;
+    width: 270px;
+    height: 120px;
+    margin: 0;
+}
+
+/* Стили для заголовков в блоках */
+.feature-item h3,
+.accurate-answers,
+.multimedia-learning,
+.time-saving,
+.accessibility,
+.personalized-testing,
+.accessible-to-all {
+    color: var(--accent-green);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Contact section */
+.contact-section {
+    padding: 4rem 2rem;
+    background-color: #67B7D1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: -2rem; 
+    max-width: 1350px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+   
+}
+.feature h2 {
+    text-align: center;
+    max-width: 1000px;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: #333;
+    transform: translateX(260px);
+  }
+
+.contact-text {
+    flex: 1;
+    color: white;
+    font-size: 2.2rem;
+    line-height: 1.6;
+    max-width: 500px
+   
+    
+}
+
+.contact-text h2 {
+    color: #A8E754;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    transform: translateX(-90px);
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px
+   
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.contact-form input::placeholder {
+    color: #aaa;
+}
+
+.submit-btn {
+    background-color: #A8E754;
+    color: #333333;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #67B7D1;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font-size: 1rem;
+    margin-left: -8rem;
+}
+
+.footer-logo img {
+    height: 85px;
+    width: 67px;
+}
+
+.footer-center {
+    text-align: center;
+    color: white;
+    transform: translateX(120px);
+}
+
+.footer-center .footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.footer-center .footer-link:hover {
+    text-decoration: underline;
+}
+.footer-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end; /* Выравнивание иконок вправо */
+    align-items: center;
+    margin-right: 2rem; /* Отступ от правого края */
+    transform: translateX(160px);
+}
+
+.footer-icons .icon-instagram {
+    width: 55px; /* Размер для Instagram */
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.footer-icons .icon-whatsapp {
+    width: 45px; /* Размер для WhatsApp */
+    height: 45px;
+    transform: translateY(-1px);
+}
+
+.footer-icons .icon-tiktok {
+    width: 35px; /* Размер для TikTok */
+    height: 35px;
+    transform: translateY(-1px);
+}
+
+/* Эффект при наведении */
+.footer-icons img:hover {
+    transform: scale(1.2); /* Увеличение при наведении */
+}
+
+
+.contact {
+    padding: 4rem 2rem;
+    background-color: var(--primary-blue);
+    margin-bottom: 7rem; /* Добавляем отступ снизу */
+}
+
+.footer {
+    background-color: #67B7D1;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem; /* Добавляем отступ сверху */
+}
+
+.thank-you-message {
+    display: none;
+    position: fixed; /* Меняем на fixed вместо absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: #333333; /* Добавляем цвет текста */
+    padding: 30px 50px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Добавляем высокий z-index */
+}
+
+/* Базовые медиа-запросы */
+@media screen and (max-width: 1200px) {
+    .hero-content {
+        padding: 2rem;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr 300px 1fr;
+        gap: 1rem;
+    }
+
+    .plans-container {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* Навигация */
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    /* Hero секция */
+    .hero-content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    /* Opportunities секция */
+    .opportunity-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Plans секция */
+    .plans-container {
+        grid-template-areas: 
+            "free"
+            "help"
+            "robot"
+            "assistant"
+            "professor";
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .plan-card {
+        transform: none !important;
+        margin: 1rem 0;
+    }
+
+    #assistant-plan, #professor-plan {
+        transform: none !important;
+    }
+
+    .robot-container img {
+        transform: none;
+        height: 200px;
+    }
+
+    /* Features секция */
+    .features-container {
+        grid-template-areas:
+            "left"
+            "robot"
+            "right";
+        grid-template-columns: 1fr;
+    }
+
+    .feature-item {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .robot-image-features img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Contact секция */
+    .contact-section {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .contact-text {
+        margin-bottom: 2rem;
+    }
+
+    .contact-text h2,
+    .contact-form {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Навигация */
+    .navbar {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .social-icons {
+        margin-top: 1rem;
+    }
+
+    /* Hero секция */
+    .hero {
+        margin-top: 12rem;
+    }
+
+    .hero-text {
+        padding-right: 0;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-center,
+    .footer-icons {
+        transform: none;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Общие стили */
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Hero секция */
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    /* Plans секция */
+    .plan-card {
+        width: 90%;
+    }
+
+    /* Contact секция */
+    .contact-text {
+        font-size: 1.5rem;
+    }
+
+    .contact-form input,
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+/* Модальное окно договора */
+@media screen and (max-width: 768px) {
+    .contract-content {
+        width: 95%;
+        padding: 15px;
+        max-height: 90vh;
+    }
+
+    .close-btn {
+        top: 5px;
+        right: 5px;
+    }
+}
+
+/* Исправление отступов для всех размеров */
+.feature h2 {
+    transform: none;
+    margin: 0 auto 3rem;
+}
+
+.footer {
+    margin-top: 3rem;
+}
+
+/* Фиксированная высота для карточек особенностей */
+.feature-item {
+    height: auto;
+    min-height: 120px;
+}
+
+/* Исправление отступов в контактной форме */
+.contact-section {
+    margin: 2rem auto;
+}
+
+/* Анимации для интерактивности */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-content,
+.plan-card,
+.feature-item,
+.contact-section {
+    animation: fadeIn 0.5s ease-in;
+}
